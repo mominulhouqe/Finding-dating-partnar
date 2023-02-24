@@ -21,7 +21,8 @@ const display = users => {
     const image = document.getElementById('img');
     image.innerHTML = `
     <h4>Country Name : ${users.results[0].location.country} </h4>
-    <h4>Country Name : ${users.results[0].email} </h4>
+    <h5 >Email : ${users.results[0].email} </h5>
+    <h5 >Call : ${users.results[0].phone} </h5>
     
    <img src="${users.results[0].picture.large}" />
     `;
